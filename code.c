@@ -53,6 +53,45 @@ bool verificare(char tabla[N][N], int linie, int coloana)
     return true;
 }
 
+bool rezolva_n_regine(char tabla[N][N], int coloana)
+{
+    int i;
+    if(coloana >= N)
+    {
+        afisare_solutii(tabla);
+        return true;
+    }
+    bool rezultat = false;
+    for(i = 0; i < N; i++)
+    {
+        if (verificare(tabla, i, coloana) == true)
+        {
+            tabla[i][coloana] = 'Q';
+            rezultat = rezolva_n_regine(tabla, coloana + 1) || rezultat;
+            tabla[i][coloana] = '.';
+        }
+    }
+    return rezultat;
+}
+
+void opt_regine()
+{
+    char tabla[N][N];
+    int i, j;
+
+    for(i = 0; i < N; i++)
+    {
+        for(j = 0; j < N; j++)
+        {
+            tabla[i][j] = '.';
+        }
+    }
+
+    if(!rezolva_n_regine(tabla, 0))
+    {
+        printf("Fara solutie.\n");
+    }
+}
 
 int main()
 {
