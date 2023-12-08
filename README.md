@@ -69,7 +69,7 @@ Q . . . . . . .
 * Folosirea **Docker-ului** faciliteaza rularea codului sursa, fara sa ai un compilator GCC descarcat pe masina ta personala, deoarece Dockerfile are deja inclus un container care face acest lucru pentru tine.
 
 ## Autor
-Creat de: <Milos Ramona-Paula>
+Creat de: **Milos Ramona-Paula**
 
 ## Bibliografie
 
