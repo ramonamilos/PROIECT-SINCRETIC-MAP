@@ -43,7 +43,7 @@ Codul sursă (`code.c`) conține funcțiile necesare pentru rezolvarea problemei
 
 ## Livrabil
 
-Imagina Docker poate fi construită și accesată de pe [Docker Hub](https://hub.docker.com/r/nume_utilizator/nume_repository). Pentru a utiliza această imagine, rulează următoarele comenzi:
+Imagina Docker poate fi construită și accesată de pe [Docker Hub](https://hub.docker.com/repository/docker/ramona828/my-gcc-image/general). Pentru a utiliza această imagine, rulează următoarele comenzi:
 
 ```
 docker pull nume_utilizator/nume_repository
