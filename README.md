@@ -28,9 +28,9 @@ Codul sursă (`code.c`) conține funcțiile necesare pentru rezolvarea problemei
 
 ## Cum să Rulezi Proiectul
 
-1. Asigurați-vă că Docker Desktop este instalat pe sistemul Windows. Puteți descărca și instala Docker Desktop de la [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop).
+1. Asigurați-vă că Docker Desktop este instalat pe sistemul Windows si ruleaza. Puteți descărca și instala Docker Desktop de la [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop).
 2. Clonează repository-ul Git:
-   Deschideți o fereastră de comandă sau PowerShell și navigați în directorul proiectului
+   Deschideți o fereastră de comandă sau PowerShell și navigați în directorul in care doriti sa stocati/salvati proiectul, iar apoi scrieti urmatoarele comenzi pe rand :
    ```
    git clone https://github.com/ramonamilos/PROIECT-SINCRETIC-MAP.git
    cd PROIECT-SINCRETIC-MAP
@@ -43,11 +43,11 @@ Codul sursă (`code.c`) conține funcțiile necesare pentru rezolvarea problemei
 
 ## Livrabil
 
-Imagina Docker poate fi construită și accesată de pe [Docker Hub](https://hub.docker.com/repository/docker/ramona828/my-gcc-image/general). Pentru a utiliza această imagine, rulează următoarele comenzi:
+Daca nu vrei sa construiesti tu o alta imagine, ai la dispozitie deja imaginea mea Docker ce poate fi accesată de pe [Docker Hub](https://hub.docker.com/repository/docker/ramona828/my-gcc-image/general). Pentru a utiliza această imagine, rulează in terminal următoarele comenzi:
 
 ```
-docker pull nume_utilizator/nume_repository
-docker run -it nume_utilizator/nume_repository
+docker pull ramona828/my-gcc-image
+docker run -it ramona828/my-gcc-image
 ```
 
 ## Exemplu de rulare
